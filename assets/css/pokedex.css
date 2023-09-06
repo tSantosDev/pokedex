@@ -1,0 +1,146 @@
+.normal {
+    background-color: #a6a877;
+}
+.grass {
+    background-color: #77c850;
+}
+.fire {
+    background-color: #ee7f30;
+}
+.water {
+    background-color: #678fee;
+}
+.electric {
+    background-color: #f7cf2e;
+}
+.ice {
+    background-color: #98d5d7;
+}
+.ground {
+    background-color: #dfbf69;
+}
+.flying {
+    background-color: #a98ff0;
+}
+.poison {
+    background-color: #a040a0;
+}
+.fighting {
+    background-color: #bf3029;
+}
+.psychic {
+    background-color: #f65687;
+}
+.dark {
+    background-color: #725847;
+}
+.rock {
+    background-color: #b8a137;
+}
+.bug {
+    background-color: #a8b720;
+}
+.ghost {
+    background-color: #6e5896;
+}
+.steel {
+    background-color: #b9b7cf;
+}
+.dragon {
+    background-color: #6f38f6;
+}
+.fairy {
+    background-color: #f9aec7;
+}
+
+.listagemPokemon_lista {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.listagemPokemon_lista_item {
+    margin: .5rem;
+    padding: 1rem;
+    color: #fff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.listagemPokemon_lista_item .numero {
+    text-align: right;
+    color: #000;
+    opacity: .3;
+    font-size: .625rem;
+}
+
+.listagemPokemon_lista_item .nome {
+    margin-bottom: .25rem;
+    text-transform: capitalize;
+}
+
+.listagemPokemon_lista_item .propriedades {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listagemPokemon_lista_item .propriedades .propriedades_listaTipos {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.listagemPokemon_lista_item .propriedades .propriedades_listaTipos .tipo {
+    padding: .25rem .5rem;
+    font-size: .625rem;
+    margin: .25rem 0;
+    border-radius: .75rem;
+    filter: brightness(1.1);
+    text-align: center;
+}
+
+.listagemPokemon_lista_item .propriedades img {
+    max-width: 100%;
+    height: 70px;
+    align-self: flex-end;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.pagination button {
+    background-color: #6c79db;
+    color: #fff;
+    font-size: .825rem;
+    border: none;
+    border-radius: 1rem;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+}
+
+@media screen and (min-width: 370px) and (max-width: 575px) {
+    .listagemPokemon_lista {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    .listagemPokemon_lista {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .listagemPokemon_lista {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
